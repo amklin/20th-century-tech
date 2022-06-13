@@ -538,6 +538,13 @@ footer {
     position:relative;
 }
 
+/*Adjusting Styles of Items On Screens Under 1200px Width*/
+@media only screen and (max-width:1200px){
+    .slide-img img {
+        min-width: auto;
+    }
+}
+
 
 /*Adjusting Styles of Items On Screens Under 1000px Width*/
 @media only screen and (max-width:1000px){
@@ -556,6 +563,8 @@ footer {
     .slide-with-img {
         width:95vw;
     }
+
+
 }
 
 /*Adjusting Styles of Items On Screens Under 700px Width*/
