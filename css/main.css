@@ -140,9 +140,8 @@ nav {
 
 
 /*Home Page*/
-
-/*Div of Title on Home Page*/
-#title-div {
+/*Home Page*/
+.article-title {
     margin: 50px 0 25px;
     height: 425px;
     width: 100vw;
@@ -157,21 +156,43 @@ nav {
     background-size: cover;
 }
 
-#layer {
-    height:100%;
-    width:100%;
+.art {
+    height: 300px;
+}
 
-    background-color:rgb(0, 0, 0, 0.5);
+.layer {
+    height: 100%;
+    width: 100%;
+
+    background-color: rgb(0, 0, 0, 0.5);
 }
 
 /*Title Div Text*/
-#title-div h1 {
+.article-title h1 {
     margin: 175px 10vw;
     width: 80vw;
     position: absolute;
     display: block;
     color: whitesmoke;
     font-size: 6.5vw;
+    cursor: pointer;
+    text-align: center;
+    font-weight: normal;
+    cursor: default;
+}
+
+.art h1 {
+    margin: 80px 10vw;
+    font-size: 5vw;
+}
+
+.art p {
+    margin: 170px 10vw;
+    width: 80vw;
+    position: relative;
+    display: block;
+    color: var(--color-main-light);
+    font-size: 2vw;
     cursor: pointer;
     text-align: center;
     font-weight: normal;
@@ -186,9 +207,41 @@ nav {
     flex-direction: column;
     align-items: center;
     background-color: var(--body-bg-color);
-    padding-top:20px;
+    padding-top: 20px;
 }
 
+.main-content-art {
+    position: relative;
+    top: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--body-bg-color);
+    padding-top: 20px;
+}
+
+.main-article {
+    width: 70vw;
+    margin-bottom: 50px;
+}
+
+.main-article p {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.img-section {
+    display: flex;
+}
+
+.img-section img {
+    margin-top: 20px;
+    width: 40%;
+}
+
+.text-w-img {
+    margin-left: 20px;
+}
 
 
 .time-header {

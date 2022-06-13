@@ -1,12 +1,3 @@
-<!--
-Names: Spencer Lyudovyk, Andrew Wang, Andrew Li, Ben FitzGerald
-Date: 06/08/22
-Project: Foresight (BME/CSE Wearable Sensor)
-File: signup.html
-Purpose: This file contains the interface for signing up for an account.
-Task description: To create a wearable sensor that collects data about a user to help solve a particular issue.
--->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,10 +18,18 @@ Task description: To create a wearable sensor that collects data about a user to
         <nav class="nav-links">
             <!--How to Use Page-->
             <h5 class="link how-to-use"><a href="howtouse.html">How to Use</a></h5>
+            
+            <div class="dropdown">
+                <!--Dropdown Title-->
+                <h5 class="link your-acc">Artifacts&nbsp;<span class="arrow-ud-2">&#9207;</span></h5>
     
-            <!--Statistics Page (Hidden When Not Logged In)-->
-            <span class="link view-stats"><a id="your-acc-name" href="statistics.html">'s Statistics</a></span>
-    
+                <!--Dropdown with Links to Your Profile, Change Password, and Mood Tracker Pages-->
+                <nav class="link your-acc-links">
+                    <h5 class="link home"><a href="index.html">Home</a></h5>
+                    <h5 class="link view-stats"><a href="statistics.html">Statistics</a></h5>
+                </nav>
+            </div>
+
             <!--Links to Sign In, Sign Up, and Sign Out Pages-->
             <h5 class="link sign-in"><a href="signin.html">Sign In</a></h5>
             <h5 class="link sign-up"><a href="signup.html">Sign Up</a></h5>
@@ -38,37 +37,84 @@ Task description: To create a wearable sensor that collects data about a user to
         </nav>
     </header>
 
-    <!--Form for Sign Up with Email and Password-->
-    <main class="form-sign">
-        <!--Form Title-->
-        <h1>Sign Up</h1>
-    
-        <!--Email Input-->
-        <label for="email">Email: </label>
-        <input id="email" type="email" name="email" class="validate" required>
-        <br>
-    
-        <!--Name Input-->
-        <label for="nameText">Name: </label>
-        <input id="nameText" type="text" name="name" class="validate" required>
-        <br>
+    <!--Title-->
+    <section class="article-title art">
+        <section class="layer">
+            <h1>Trinity Test and the Atomic Bomb</h1>
+            <p>By: Spencer Lyudovyk</p>
+        </section>
+    </section>
 
-        <!--Phone Number Input-->
-        <label for="phone">Phone Number (+x xxx-xxx-xxxx) (exclude spaces and dashes): </label>
-        <input id="phone" type="tel" name="phone" class="validate" pattern="+1[0-9]{3}[0-9]{3}[0-9]{4}" required>
-        <br>
-    
-        <!--Password Input-->
-        <label for="password">Password: </label>
-        <input id="password" type="password" name="password" class="validate" required>
-        <br>
-    
-        <!--Password Confirmation-->
-        <label for="passwordconfirm">Confirm password: </label>
-        <input id="passwordconfirm" type="password" name="passwordconfirm" class="validate" required>
-    
-        <!--Submit Button-->
-        <input class="submit btn" type="submit" value="Enter">
+    <main class="main-content-art">
+        <section class="main-article">
+            <div class="img-section">
+                <img src="img/how-to-wear.jpg">
+                <div class="text-w-img">
+                    <p>The Manhattan Project was created in 1941 after US intelligence found that Nazi scientists had been working
+                        on a nuclear weapon. The goal was for the US to create such a weapon before other countries had the chance.
+                        These efforts culminated in the Trinity Test on July 16, 1945, when the “Gadget,” the world's first nuclear
+                        device, detonated in the Jornada Del Muerto Desert in New Mexico. The Gadget, which caused the explosion
+                        photographed by _____ in the artifact above, was a plutonium implosion device shaped like a large steel globe.
+                        It had plutonium in the middle with regular explosives around it, and, when the explosives detonated, the
+                        plutonium was squeezed, resulting in the fission chain reaction needed to explode the plutonium. The explosion
+                        generated an amount of force equivalent to about 15,000 to 20,000 tons of TNT. Thus, the first successful
+                        atomic bomb had been created, ushering in the Atomic Age.
+                    </p>
+                    <p>
+                        In early August 1945, using the nuclear technology developed by the Manhattan Project, the US
+                        bombed the cities of Hiroshima and Nagasaki in Japan with the “Little Boy” and “Fat Man” bombs, respectively.
+                        (The Little Boy was a gun-type uranium bomb, while the Fat Man was a plutonium bomb similar to the Gadget.)
+                        The goal was to demonstrate the bombs' power and make the Japanese surrender in the Pacific Theatre of World War II (WWII).
+                    </p>
+                </div>
+            </div>
+            <p>
+                After this point, the atomic testing at Trinity was publicized. The Manhattan Project was thrust into the public eye,
+                and most people believed that the use of the bombs had ended the war and saved American lives; after being at war for
+                almost four years, most lacked sympathy for Japan. In the immediate aftermath, a Gallup poll was held, showing that
+                85% of Americans approved of the use of atomic weapons on Japanese cities. However, over time, varying opinions began
+                to emerge, newly dividing the country on the topic of nuclear bombs. Some people felt that war now had to be abolished
+                as any future world war would involve nuclear weapons and would thus end civilization. This caused campaigns for peace and
+                disarmament and bolstered support for the United Nations (UN) that would help to unite the world. Conversely, others believed
+                that nuclear weapons were necessary to keep the country safe and prevent other countries from attacking (i.e., as deterrence).
+                Never before had atomic weapons been so public, and they would alter the world forever, with Secretary of State Stimson even
+                noting that the bombs should be considered “a revolutionary change in the relations of man to the universe.”
+            </p>
+            <p>
+                Furthermore, after the end of WWII, by 1947, the Cold War had begun taking shape as a political and economic rivalry between
+                the US and the Soviet Union. Due to the US being the first country (before the Soviets) to develop a successful atomic bomb,
+                many Americans and officials believed that it could be used to protect against and deter the threat of communism. After all,
+                the US having a nuclear monopoly could limit Soviet options and be considered a danger to Soviet security, potentially making
+                them less likely to act in a way that would harm the US. Although officials expected the Soviets to develop similar technology,
+                American intelligence only believed this would happen in 1952 or later, and many felt that the US would be able to stay ahead,
+                developing more weapons more quickly. However, the Soviets had sped up their atomic program in response to US developments, and,
+                when, on August 29, 1949, they successfully tested their first nuclear device, RDS-1 or “First Lightning,” America was shocked.
+            </p>
+            <p>
+                The Second Red Scare had already begun taking root, and this just added fuel to the fire. Many now feared that the Soviets had
+                used espionage and had stolen American secrets in order to develop their atomic bomb due to its resemblance to the Fat Man. This
+                played into the spread of McCarthyism and the support of various trials of suspected Soviets, with people seeking to find spies in
+                both the government and the general public. The idea that spies could be anywhere spread like wildfire, creating an atmosphere of
+                panic in the lives of average citizens. Additionally, the US no longer had a monopoly on functional nuclear weapons, making people
+                fear that Soviets were becoming more powerful and thus causing a desire for the development of more weapons to once again be ahead.
+                Overall, there was a big shift in public opinion and US culture, with people fearing and needing to be better than the USSR in levels
+                never really seen before. As a result, the Cold War saw a drastic increase in nuclear arms production and the stockpiling of nukes,
+                with both sides seeing them as a deterrent against war and trying to stay ahead in numbers. Although much of the nuclear arsenal
+                buildup in the arms race would occur in the 1950s, the seed had been planted in the 1940s.
+            </p>
+            <p>
+                Thus, this artifact was selected as it played a major role in shaping the world for many years, and even decades, to come.
+                Even today, we are seeing its impacts, with many debates about the necessity of nuclear weapons and related technology. In a way,
+                the Trinity Test marked the beginning of the new age of nuclear weapons and their consequences. Further, although the bomb didn't
+                create the Red Scare and the Cold War, it certainly fueled them, and, if not for the development of atomic weapons, conflicts with
+                the USSR may not have escalated so drastically.
+            </p>
+        </section>
+
+        <!--Footer-->
+        <footer>
+            <p>Spencer Lyudovyk, Amanda Lin, Ryan Wang, Abhi Bodala</p>
+        </footer>
     </main>
 
     <!--Javascript Links-->
