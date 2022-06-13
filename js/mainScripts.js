@@ -66,4 +66,5 @@ $(document).ready(function () {
             $(arrow).html("&#11167;");  //Arrow in primary dropdown title is pointed down
         });
     }
+
 });

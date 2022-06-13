@@ -1,11 +1,3 @@
-/* Names: Spencer Lyudovyk, Andrew Wang, Andrew Li, Ben FitzGerald
-Date: 06/08/22
-Project: Foresight (BME/CSE Wearable Sensor)
-File: main.css
-Purpose: This file contains the stylesheet used across all website pages.
-Task description: To create a wearable sensor that collects data about a user to help solve a particular issue.
- */
-
 /*Resetting Styles, Setting Font Family, Declaring Color Variables*/
 * {
     all:revert;
@@ -13,13 +5,13 @@ Task description: To create a wearable sensor that collects data about a user to
     margin:0;
 
     /*Green Color Scheme*/
-    --color-main-light: rgb(228, 251, 226);
-    --color-main-dark: rgba(0, 82, 18, 0.9);
-    --color-medium: rgb(55, 135, 39);
-    --color-dark-shade: rgba(6, 32, 4, 0.7);
-    --color-semi-transparent: rgba(180, 231, 193, 0.4);
-    --body-bg-color: rgb(245, 255, 248);
-    --color-light-medium: rgb(157, 208, 147);
+    --color-main-light: rgb(251, 226, 226);
+    --color-main-dark: rgb(82, 0, 0);
+    --color-medium: rgb(135, 39, 39);
+    --color-dark-shade: rgba(32, 4, 4, 0.7);
+    --color-semi-transparent: rgba(231, 180, 180, 0.4);
+    --body-bg-color: rgb(255, 248, 248);
+    --color-light-medium: rgb(208, 147, 147);
 }
 
 /*General Styles*/
@@ -163,6 +155,7 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    background-color: var(--color-dark-shade);
 }
 
 /*Title Div Text*/
@@ -186,6 +179,26 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--body-bg-color);
+    padding-top:20px;
+}
+
+
+
+.time-header {
+    width:80%;
+    margin-bottom:20px;
+}
+
+.time-header h5 {
+    width:fit-content;
+    font-size:40px;
+}
+
+hr {
+    height: 3.5px;
+    background-color:black;
+    border:none;
 }
 
 /*Info Slides (About, How to Use, View Data)*/
@@ -193,7 +206,7 @@ nav {
     width: 80%;
     height: 400px;
     display: flex;
-    margin-bottom: 50px;
+    margin: 10px 0 20px;
 }
 
 /*Image Containers in Info Slides to Ensure Proper Image Sizing*/
@@ -207,8 +220,10 @@ nav {
 
 /*Images in Info Slides*/
 .slide-img img {
-    height: 100%;
+    min-height: 100%;
 }
+
+
 
 /*Text Descriptions on Info Slides*/
 .text-desc {
@@ -237,11 +252,6 @@ nav {
 .text-desc .btn {
     width: fit-content;
     margin-top: 30px;
-}
-
-/*View Data Slide is Invisible By Default (When Not Logged In)*/
-#data-slide {
-    display: none;
 }
 
 
