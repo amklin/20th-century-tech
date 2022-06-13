@@ -314,6 +314,21 @@ hr {
     margin-top: 30px;
 }
 
+.slide.full-screen {
+    height: auto;
+}
+
+.text-desc.full-screen {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    padding: 40px;
+
+    background-color: #182a4b;
+    /*background-color:var(--color-medium);*/
+    color: whitesmoke;
+}
 
 /*Sign In, Sign Up, and Sign Out Forms*/
 
