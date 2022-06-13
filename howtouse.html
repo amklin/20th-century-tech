@@ -1,0 +1,339 @@
+<!--
+Names: Spencer Lyudovyk, Andrew Wang, Andrew Li, Ben FitzGerald
+Date: 06/08/22
+Project: Foresight (BME/CSE Wearable Sensor)
+File: howtouse.html
+Purpose: This file contains the instructional page about how to use the device.
+Task description: To create a wearable sensor that collects data about a user to help solve a particular issue.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>How to Use</title>
+</head>
+
+<body>
+    <!--Header-->
+    <header class="z-depth-2">
+        <!--Site Title-->
+        <a class="title" href="index.html">Foresight</a>
+
+        <!--Section of Header with Navigation Links-->
+        <nav class="nav-links">
+            <!--How to Use Page-->
+            <h5 class="link how-to-use"><a href="howtouse.html">How to Use</a></h5>
+
+            <!--Statistics Page (Hidden When Not Logged In)-->
+            <span class="link view-stats"><a id="your-acc-name" href="statistics.html">'s Statistics</a></span>
+
+            <!--Links to Sign In, Sign Up, and Sign Out Pages-->
+            <h5 class="link sign-in"><a href="signin.html">Sign In</a></h5>
+            <h5 class="link sign-up"><a href="signup.html">Sign Up</a></h5>
+            <h5 class="link sign-out" display="none"><a href="signout.html">Sign Out</a></h5>
+        </nav>
+    </header>
+
+    <!--Page Title-->
+    <section>
+        <h1 class="title-generic">How to Use</h1>
+    </section>
+
+    <!--Main Content-->
+    <main class="content-generic">
+        <!--How to Set Up Software-->
+
+        <h4>Step 1: Setting Up</h4>
+
+        <!--Info About Signing Up and Downloading Files-->
+        <section class="slide-with-img">
+            <section class="slides" id="sign-up-slide">
+                <section class="slide-how" class="z-depth-2">
+                    <div class="num"><h3>1</h3></div>
+                    <p>Before you can start using the device, you must create an account.
+                        If you don't already have one, please navigate to the <a href="signup.html">Sign Up</a> page of this website to create one.
+                    </p>
+                </section>
+                <section class="slide-how" class="z-depth-2">
+                    <div class="num">
+                        <h3>2</h3>
+                    </div>
+                    <p>You'll be asked for your email, name, phone number, and password. All fields must be completed to sign up.</p>
+                </section>
+                <section class="slide-how" class="z-depth-2">
+                    <div class="num">
+                        <h3>3</h3>
+                    </div>
+                    <p>Once you sign in, to get and analyze data, you'll need our two apps: Foresight Image Collection and Foresight Blink Detection.
+                        Download the files <a href="https://drive.google.com/file/d/1zbzWFGex0hmQRU8ELTmihbmu2jdRv3LL/view?usp=sharing" target="_blank">here</a>.
+                        To run the Foresight Image Collection App, you'll also need a JRE. Many computers
+                        come with it preinstalled, but if you aren't sure if you have it, download it <a href="https://www.oracle.com/java/technologies/downloads/" target="_blank">here</a>.
+                    </p> 
+                </section>
+            </section>
+
+            <!--Image of Sign Up Page-->
+            <img id="sign-up-img" src="img/sign-up.jpg">
+        </section>
+
+        <!--Info About Extracting Files From Downloads-->
+        <section class="slide-with-img">
+            <section class="slides">
+                <section class="slide-how" class="z-depth-2">
+                    <div class="num">
+                        <h3>4</h3>
+                    </div>
+                    <p>Once the app files are downloaded, go into File Explorer on your computer and unzip the folder. (You can unzip it by right clicking and
+                        selecting "Extract files".)</p>
+                </section>
+                <section class="slide-how" class="z-depth-2">
+                    <div class="num">
+                        <h3>5</h3>
+                    </div>
+                    <p>Enter the unzipped folder and find the ForesightImageCapture and ForesightBlinkDetection files.
+                        You'll be using the files here for analysis later on. If you're running on an older computer, you may also need to
+                        download a  to be able to execute the ForsightImageCapture app.</p>
+                </section>
+            </section>
+
+            <!--Image of How to Extract Files-->
+            <img src="img/execute-me.jpg">
+        </section>
+
+        <!--How to Put On and Wear the Device-->
+
+        <h4>Step 2: Wearing the Device</h4>
+
+        <!--Info About How to Put the Device On-->
+        <section class="slide-with-img">
+            <section class="slides">
+                <section class="slide-how" class="z-depth-2">
+                    <div class="num"><h3>1</h3></div>
+                    <p>Fasten the box to your chest as shown by wrapping the strap above one shoulder and below the other.
+                        The side with the black tube should be facing away from your chest.</p>
+                </section>
+                <section class="slide-how" class="z-depth-2">
+                    <div class="num">
+                        <h3>2</h3>
+                    </div>
+                    <p>Buckle the strap and tighten to your liking.</p>
+                </section>
+                <section class="slide-how" class="z-depth-2">
+                    <div class="num">
+                        <h3>3</h3>
+                    </div>
+                    <p>Place the glasses onto your head as you normally would. For comfort, you may want to place the black cord
+                        around/behind your neck rather than in front of it.
+                    </p>
+                </section>
+            </section>
+
+            <!--Image of Device-->
+            <img src="img/how-to-wear.jpg">
+        </section>
+
+        <!--Info About How to Connect the Device and a Computer By Wire-->
+        <section class="slide-with-img">
+            <section class="slides" ud="usb-slide">
+                <section class="slide-how" class="z-depth-2">
+                    <div class="num">
+                        <h3>4</h3>
+                    </div>
+                    <p>Plug the non-USB end of the grey wire into the Arduino through the hole on the side of the box on your chest.</p>
+                </section>
+                <section class="slide-how" class="z-depth-2">
+                    <div class="num">
+                        <h3>5</h3>
+                    </div>
+                    <p>Plug the USB end of the grey wire into your computer.</p>
+                </section>
+            </section>
+
+            <!--Info of Plugged in Wire Connections-->
+            <img id="usb-img" src="img/usb-cable.JPG">
+        </section>
+
+        <!--How to Use the Software-->
+
+        <h4>Step 3: Running the Software</h4>
+
+        <!--Info About How to Use the Blink Detection Interface-->
+        <section class="slide-with-img">
+            <section class="slides" id="blink-app-slide">
+                <section class="slide-how" class="z-depth-2">
+                    <div class="num">
+                        <h3>1</h3>
+                    </div>
+                    <p>Like you did when setting up, go back into the folder containing the program files and enter the "EXECUTE ME" folder.</p>
+                </section>
+                <section class="slide-how" class="z-depth-2">
+                    <div class="num">
+                        <h3>2</h3>
+                    </div>
+                    <p>Double click on the file titled "ForesightBlinkDetection" to open it.</p>
+                </section>
+                <section class="slide-how" class="z-depth-2">
+                    <div class="num">
+                        <h3>3</h3>
+                    </div>
+                    <p>Read the instructions, enter your email and password into the interface, and click "Sign In" to log in. (If you
+                        don't have an account, sign up <a href="signup.html">here</a>.)</p>
+                </section>
+            </section>
+
+            <!--Image of Blink Detection App-->
+            <img id="blink-app-img" src="img/blink-detection-app.png">
+        </section>
+
+        <!--Info About How to Begin Analysis-->
+        <section class="slide-with-img">
+            <section class="slides" id="signed-app-slides">
+                <section class="slide-how" class="z-depth-2">
+                    <div class="num">
+                        <h3>4</h3>
+                    </div>
+                    <p>Read the new instructions that pop up, and click "Start Analysis" when you're ready.
+                        A new screen will pop up telling you to start taking images using Foresight Image Capture.
+                    </p>
+                </section>
+            </section>
+
+            <!--Image of Interface Once Signed Into App + Beginning Analysis-->
+            <img id="signed-app-img" src="img/signed-in-app.jpg">
+        </section>
+
+        <!--Info About How to Use Image Capture App-->
+        <section class="slide-with-img">
+            <section class="slides" id="capture-app-slide">
+                <section class="slide-how" class="z-depth-2">
+                    <div class="num">
+                        <h3>5</h3>
+                    </div>
+                    <p>Once you have signed in successfully, navigate back to the folder where you found the "ForesightBlinkDetection" file
+                    and double click on the file titled "ForesightImageCapture" to open it.</p>
+                </section>
+                <section class="slide-how" class="z-depth-2">
+                    <div class="num">
+                        <h3>6</h3>
+                    </div>
+                    <p>In the top left corner you should see the name of the USB port that your Arduino is connected to.
+                        If you don't see this, close the Image Capture app, reconnect the USB to your computer, and reopen the app.
+                        Once you're in the app, new port connections will not be updated, so don't change where the device is plugged in.
+                    </p>
+                </section>
+                <section class="slide-how" class="z-depth-2">
+                    <div class="num">
+                        <h3>7</h3>
+                    </div>
+                    <p>When you're ready, select "Begin session" to start gathering images. Images will be shown to you as they are captured.
+                        Don't be alarmed by the green image at the beginning--it's used for calibration!
+                        After the green image, you should see images of your face being loaded in. If the lighting in your location
+                        is too dark or too bright, the camera will take a few frames to adjust to it.
+                    </p>
+                </section>
+            </section>
+
+            <!--Image of ForesightImageCapture App-->
+            <img id="capture-app-img" src="img/capture-app.jpg">
+        </section>
+
+        <!--Info About How Images are Analyzed and How to Stop Analysis-->
+        <section class="slide-with-img">
+            <section id="analysis-slide" class="slides">
+                <section class="slide-how" class="z-depth-2">
+                    <div class="num">
+                        <h3>8</h3>
+                    </div>
+                    <p>The images will be automatically retrieved by the Foresight Blink Detection software and displayed again in a new window as they are analyzed.
+                        You'll see an outline of your eyes, the number of blinks in the session, and your eye aspect ratio (EAR)!
+                        You'll get an SMS notification if you're detected to be tired. (You're likely tired if you blink at least 4 times for at least 2 minutes in succession.)
+                    </p>
+                </section>
+                <section class="slide-how" class="z-depth-2">
+                    <div class="num">
+                        <h3>9</h3>
+                    </div>
+                    <p>When you're done, you may click "End session" on Foresight Image Capture to stop gathering images.
+                        (You can click "Start session" again to save data in a new session.)</p>
+                </section>
+                <section class="slide-how" class="z-depth-2">
+                    <div class="num">
+                        <h3>10</h3>
+                    </div>
+                    <p>To stop blink analysis, press "Stop Analysis" while on Foresight Blink Detection.
+                        On the new page that comes up, you can click "Back to Analysis" again to start over.
+                        (Don't click "Stop Analysis" before you click "End Session" because this prevent subsequent images from being analyzed.)</p>
+                </section>
+            </section>
+
+            <!--Image of Sample Photo Being Analyzed-->
+            <img id="analysis-img" src="img/analysis.jpg">
+        </section>
+
+        <!--How to View Measured Data-->
+
+        <h4>Step 4: Viewing Your Data</h4>
+
+        <!--Info About Where to View Data-->
+        <section class="slide-with-img">
+            <section class="slides">
+                <section class="slide-how" class="z-depth-2">
+                    <div class="num">
+                        <h3>1</h3>
+                    </div>
+                    <p>To view your data, <a href="signin.html">sign in</a> first and then navigate to the <a href="statistics.html">Statistics</a> page of this site.</p>
+                </section>
+            </section>
+
+            <!--Image of Session Dropdown Menu-->
+            <img src="img/dropdown-stats.png">
+        </section>
+
+        <!--Info About Selecting Which Session to View and What Data Will Appear-->
+        <section class="slide-with-img">
+            <section class="slides">
+                <section class="slide-how" class="z-depth-2">
+                    <div class="num">
+                        <h3>2</h3>
+                    </div>
+                    <p>From the dropdown shown, select what session you'd like to view your data for.</p>
+                </section>
+                <section class="slide-how" class="z-depth-2">
+                    <div class="num">
+                        <h3>3</h3>
+                    </div>
+                    <p>Click "Enter", and you'll be shown a graph of how your blinks per minute varied over time, as well as
+                        your average blinks per minute and the number of minutes that you were detected to be tired for.</p>
+                </section>
+                <section class="slide-how" class="z-depth-2">
+                    <div class="num">
+                        <h3>4</h3>
+                    </div>
+                    <p>To view data for other sessions, go back to the dropdown, select a new session,
+                        and click "Enter" again.</p>
+                </section>
+            </section>
+
+            <!--Image of Sample Data-->
+            <img src="img/data-view.png">
+        </section>
+
+        <!--Footer-->
+        <footer>
+            <p>Spencer Lyudovyk, Andrew Wang, Andrew Li, Ben FitzGerald</p>
+        </footer>
+    </main>
+
+    <!--Javascript Links-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="/js/mainScripts.js"></script>
+    <script type="module" src="/js/firebaseScripts.js"></script>
+</body>
+
+</html>

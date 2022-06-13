@@ -1,0 +1,564 @@
+/* Names: Spencer Lyudovyk, Andrew Wang, Andrew Li, Ben FitzGerald
+Date: 06/08/22
+Project: Foresight (BME/CSE Wearable Sensor)
+File: main.css
+Purpose: This file contains the stylesheet used across all website pages.
+Task description: To create a wearable sensor that collects data about a user to help solve a particular issue.
+ */
+
+/*Resetting Styles, Setting Font Family, Declaring Color Variables*/
+* {
+    all:revert;
+    font-family: Helvetica, sans-serif;
+    margin:0;
+
+    /*Green Color Scheme*/
+    --color-main-light: rgb(228, 251, 226);
+    --color-main-dark: rgba(0, 82, 18, 0.9);
+    --color-medium: rgb(55, 135, 39);
+    --color-dark-shade: rgba(6, 32, 4, 0.7);
+    --color-semi-transparent: rgba(180, 231, 193, 0.4);
+    --body-bg-color: rgb(245, 255, 248);
+    --color-light-medium: rgb(157, 208, 147);
+}
+
+/*General Styles*/
+
+/*General Body Style*/
+body {
+    background-color: var(--body-bg-color)
+}
+
+/*Links Have No Text Decoration and Default to White*/
+a {
+    text-decoration:none;
+    color:white;
+}
+
+/*Header and Nav Bar*/
+
+/*General Header Style*/
+header {
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    
+    box-sizing:border-box;
+    width:100vw;
+    height:53px;
+    padding:15px;
+
+    z-index:20;
+    font-size:15px;
+    
+    display:flex;
+    align-items:center;
+    
+    color:var(--color-main-light);
+    background-color: var(--color-main-dark);
+
+    --header-font-size: 1.1rem;
+}
+
+/*Title In Header to Ensure Proper Formatting and Centering*/
+.title {
+    display:inline-flex;
+    justify-content:center;
+    align-content:center;
+    font-size:20px;
+}
+
+/*Nav Bar and Links for Moving Between Pages*/
+
+/*Resetting Materialize Nav Styles*/
+nav {
+    all:revert;
+}
+
+/*Nav Section with How to Use, Statistics, Sign In, Sign Up, and Sign Out*/
+
+/*Links Container*/
+.nav-links {
+    display: inline-flex;
+    height: 53px;
+    position: absolute;
+    right: 20px;
+    margin: 0;
+}
+
+/*General Header Link Styles*/
+.link {
+    white-space: nowrap;
+    
+    display:inline-flex;
+    align-items:center;
+    
+    box-sizing: border-box;
+    padding: 0 10px;
+    margin:0;
+    height:100%;
+    
+    color: white;
+    font-size: var(--header-font-size);
+    text-decoration:none;
+    transition:0.2s;
+}
+
+/*Nav Bar Font Size, Weight, and Color*/
+.nav-links a, .nav-links h5 {
+    font-size:15px;
+    font-weight:100;
+}
+
+/*Dropdown*/
+
+/*Dropdown Styles*/
+.dropdown {
+    position:relative;
+    display:flex;
+}
+
+/*Primary Dropdown*/
+.your-acc-links {
+    display:inline-flex;
+    flex-direction:column;
+    position:absolute;
+    align-items:flex-end;
+    align-content:flex-end;
+    justify-items:flex-end;
+    justify-content:flex-end;
+    background-color: var(--color-main-dark);
+    top:53px;
+    right:0;
+    height:fit-content;
+    padding:0;
+}
+
+.your-acc-links .link {
+    display:flex;
+    justify-content: flex-end;
+}
+
+/*Links in Dropdowns Take Up Dropdown's Full Width*/
+.home, .view-stats {
+    width: 100%;
+    padding: 5px 8px;
+}
+
+
+/*Home Page*/
+
+/*Div of Title on Home Page*/
+#title-div {
+    margin: 50px 0 25px;
+    height: 425px;
+    width: 100vw;
+    position: fixed;
+
+    display: flex;
+    align-content: center;
+
+    background-image: url('/img/eye-removebg-preview.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/*Title Div Text*/
+#title-div h1 {
+    margin: 175px 10vw;
+    width: 80vw;
+    position: absolute;
+    display: block;
+    color: var(--color-medium);
+    font-size: 6.5vw;
+    cursor: pointer;
+    text-align: center;
+    font-weight: normal;
+    cursor: default;
+}
+
+/*Main Page Content Underneath Title Div*/
+.main-content {
+    position: relative;
+    top: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Info Slides (About, How to Use, View Data)*/
+.slide {
+    width: 80%;
+    height: 400px;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+/*Image Containers in Info Slides to Ensure Proper Image Sizing*/
+.slide-img {
+    width: 50%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/*Images in Info Slides*/
+.slide-img img {
+    height: 100%;
+}
+
+/*Text Descriptions on Info Slides*/
+.text-desc {
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+    padding: 40px;
+
+    background-color: var(--color-medium);
+    color: whitesmoke;
+}
+
+/*Description Headers*/
+.text-desc h3 {
+    margin-bottom: 30px;
+}
+
+/*Description Explanations*/
+.text-desc p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/*Description Button (for Info Slides with More Info Available)*/
+.text-desc .btn {
+    width: fit-content;
+    margin-top: 30px;
+}
+
+/*View Data Slide is Invisible By Default (When Not Logged In)*/
+#data-slide {
+    display: none;
+}
+
+
+/*Sign In, Sign Up, and Sign Out Forms*/
+
+/*Form Containers*/
+.form-sign {
+    height: fit-content;
+    padding: 5px 5% 50px;
+    margin: 100px 20%;
+
+    background-color: var(--color-main-dark);
+    color: whitesmoke;
+}
+
+/*Labels for Inputs*/
+.form-sign label{
+    font-size: 1rem;
+    color:white;
+}
+
+/*Entered Items in Forms*/
+input {
+    color: whitesmoke;
+}
+
+
+/*How to Use and Statistics Pages Shared Styling*/
+
+/*Titles*/
+.title-generic {
+    margin: 100px 10vw;
+    width: 80vw;
+    position: absolute;
+    display: block;
+
+    color: black;
+    font-size: 4rem;
+    font-weight: normal;
+    text-align: center;
+    
+    cursor: default;
+}
+
+/*Main Content Containers*/
+.content-generic {
+    position: relative;
+    top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*How to Use Page*/
+
+/*Instructional Slide and Image Container*/
+.slide-with-img {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10vw 10px;
+    width: 80vw;
+}
+
+/*Slides Container Next to Each Image (Placed Beside Images)*/
+.slides {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+/*Instructional Slide Containing a Step of the Instructions*/
+.slide-how {
+    background: var(--color-main-light);
+    display:flex;
+    align-items: center;
+    margin-bottom: 20px !important;
+}
+
+/*Step Number Container*/
+.num {
+    display:flex;
+    align-items: center;
+    height:100%;
+    background: var(--color-main-dark);
+}
+
+/*Step Number*/
+.num h3 {
+    margin:0;
+    min-width: 45px;
+    color: whitesmoke;
+    text-align:center;
+}
+
+/*Text Instructions in Step*/
+.slide-how p {
+    padding: 20px;
+}
+
+/*Links in Instructions are Dark Green and Bold*/
+.slide-how a {
+    color: var(--color-main-dark);
+    font-weight: bold;
+}
+
+/*Links Turn Lighter on Hover*/
+.slide-how a:hover {
+    color: var(--color-light-medium);
+}
+
+/*Image Default Layout (Not Used For All)*/
+.slide-with-img img {
+    width: 40%;
+    height:100%;
+    margin: 0 0 15px 15px;
+}
+
+/*Sign Up Slide and Image Width Styling*/
+#sign-up-slide {
+    width: 55%;
+}
+#sign-up-img {
+    width: 45%;
+}
+
+/*USB Cable Slide and Image Width Styling*/
+#usb-slide {
+    width: 60%;
+}
+#usb-img {
+    width: 40%;
+}
+
+/*Blink Detection App Sign In Slide and Image Width Styling*/
+#blink-app-slide {
+    width: 65%;
+}
+#blink-app-img {
+    width:35%;
+}
+
+/*Signed in App (Analysis Started) Slide and Image Width Styling*/
+#signed-app-slide {
+    width: 23%;
+}
+#signed-app-img {
+    width:77%;
+}
+
+/*Image Capture App Slide and Image Width Styling*/
+#capture-app-slide {
+    width: 64%;
+}
+#capture-app-img {
+    width: 36%;
+}
+
+/*Image Analysis in Blink Detection App Slide and Image Width Styling*/
+#analysis-slide {
+    width:55%;
+}
+#analysis-img {
+    width: 45%;
+}
+
+
+/*Statistics Page*/
+
+/*Container for Stat Slides (General Information About Session) Above Graph*/
+.info-cards {
+    display: flex;
+    justify-content: center;
+    width: 75vw;
+    margin-bottom: 30px;
+}
+
+/*Container for Choosing Session Form*/
+.options {
+    width: fit-content;
+    min-width: 950px;
+    margin: auto;
+    padding: 30px;
+}
+
+/*Form Containing Dropdown to Choose Session to View Data For*/
+.sess-choice {
+    flex-grow: 9
+}
+
+/*Dropdown Label*/
+.sess-choice label {
+    font-size: 20px;
+    color: black;
+}
+
+/*Session Names in Dropdown*/
+.sessions {
+    z-index: 100;
+    display: block;
+    visibility: visible;
+}
+
+/*Stat Slides Containing Session Info*/
+.slide-stat {
+    padding: 10px 5%;
+    background-color: var(--color-medium);
+    margin: 0 20px;
+    color: whitesmoke;
+}
+
+/*Stat Slide Labels/Titles*/
+#bpmlabel,
+#minlabel {
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0 5px;
+}
+
+/*Stat Slide Values*/
+#bpmval,
+#minval {
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0 20px;
+}
+
+/*Blinks Per Minute Graph*/
+#bpm {
+    height: fit-content;
+    width: 70vw;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 10px;
+
+    justify-self: center;
+    align-self: center;
+
+    background-color: white;
+    border: 5px solid var(--color-main-dark);
+}
+
+
+/*Buttons*/
+
+/*Default Button Styles*/
+.btn {
+    background-color:var(--color-main-dark);
+    color: var(--color-main-light);
+    border:2px solid var(--color-main-light);
+    font-size:1rem;
+
+    transition: 0.3s;
+}
+
+/*Button Sizing on Form Pages (Sign In, Sign Up, Sign Out) and Statistics Page*/
+input.btn, .submit-stat {
+    padding:0 1rem 38px;
+    margin-top: 20px;
+}
+
+/*Buttons Invert Color on Hover*/
+.btn:hover {
+    background-color: var(--color-main-light);
+    color: var(--color-main-dark);
+}
+
+
+/*General Footer Styles*/
+footer {
+    box-sizing: border-box;
+    width:100%;
+    padding: 1rem;
+
+    font-size:15px;
+
+    color: var(--color-main-light);
+    background-color: var(--color-main-dark);
+
+    display:flex;
+    justify-content:flex-end;
+
+    position:relative;
+}
+
+
+/*Adjusting Styles of Items On Screens Under 1000px Width*/
+@media only screen and (max-width:1000px){
+    .slide-with-img {
+        width: 90vw;
+    }
+}
+
+/*Adjusting Styles of Items On Screens Under 800px Width*/
+@media only screen and (max-width: 800px){
+    /*Form Width*/
+    .form-sign {
+        width:70%;
+    }
+
+    .slide-with-img {
+        width:95vw;
+    }
+}
+
+/*Adjusting Styles of Items On Screens Under 700px Width*/
+@media only screen and (max-width: 700px) {
+    /*Steps and Images Stack in Column Instead of In Row*/
+    .slide-with-img {
+       flex-direction: column;
+    }
+
+    /*Slides and Images Each Take Up 95% of ViewWidth*/
+    .slides {
+        width:95vw !important;
+    }
+    .slide-with-img img {
+        width:95vw !important;
+    }
+}

@@ -1,0 +1,125 @@
+<!--
+Names: Spencer Lyudovyk, Andrew Wang, Andrew Li, Ben FitzGerald
+Date: 06/08/22
+Project: Foresight (BME/CSE Wearable Sensor)
+File: index.html
+Purpose: This file contains the website's home page.
+Task description: To create a wearable sensor that collects data about a user to help solve a particular issue.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Foresight</title>
+</head>
+<body>
+    <!--Header-->
+    <header class="z-depth-2">
+        <!--Site Title-->
+        <a class="title" href="index.html">Foresight</a>
+    
+        <!--Section of Header with Navigation Links-->
+        <nav class="nav-links">
+            <!--How to Use Page-->
+            <h5 class="link how-to-use"><a href="howtouse.html">How to Use</a></h5>
+            
+            <div class="dropdown">
+                <!--Dropdown Title-->
+                <h5 class="link your-acc">Artifacts&nbsp;<span class="arrow-ud-2">&#11167;</span></h5>
+    
+                <!--Dropdown with Links to Your Profile, Change Password, and Mood Tracker Pages-->
+                <nav class="link your-acc-links">
+                    <h5 class="link home"><a href="index.html">Home</a></h5>
+                    <h5 class="link view-stats"><a href="statistics.html">Statistics</a></h5>
+                </nav>
+            </div>
+
+            <!--Links to Sign In, Sign Up, and Sign Out Pages-->
+            <h5 class="link sign-in"><a href="signin.html">Sign In</a></h5>
+            <h5 class="link sign-up"><a href="signup.html">Sign Up</a></h5>
+            <h5 class="link sign-out" display="none"><a href="signout.html">Sign Out</a></h5>
+        </nav>
+    </header>
+    
+    <!--Title-->
+    <section id="title-div">
+        <h1>FORESIGHT</h1>
+    </section>
+    
+    <!--Main Site Content-->
+    <main class="main-content">
+        <!--'About' Info Slide-->
+        <section class="slide">
+            <!--Image of Device-->
+            <figure class="slide-img">
+                <img src="img/device.JPG">
+            </figure>
+
+            <!--General Rationale for Device-->
+            <div class="text-desc">
+                <h3>About</h3>
+                <p>20% of car crashes are caused by fatigue. Yet, studies show that people can't always tell when they're tired.
+                </p>
+                <p>With Foresight, we aim to solve this problem by providing glasses that detect whether or not you're tired.
+                </p>
+                <p>Navigate this site's various pages or check the card below for instructions!</p>
+            </div>
+        </section>
+
+        <!--'How to Use' Info Slide-->
+        <section class="slide">
+            <!--Brief Description of Use-->
+            <div class="text-desc">
+                <h3>How to Use</h3>
+                <p>Foresight is easy to use, coming with its own applications for data collection and analysis.
+                </p>
+                <p>Once you make an account, you can use these to track your tiredness based on how often you blink!
+                </p>
+
+                <!--Link to Learn More-->
+                <div class="btn"><a href="howtouse.html">Learn How</a></div>
+            </div>
+
+            <!--Image of ForesightImageCapture App-->
+            <figure class="slide-img">
+                <img src="img/blink-detection-app.png">
+            </figure>
+        </section>
+
+        <!--'View Your Data' Info Slide (Only Visible When Logged In)-->
+        <section class="slide" id="data-slide">
+            <!--Image of Sample Graph Data-->
+            <figure class="slide-img">
+                <img src="img/data-sample.png">
+            </figure>
+
+            <!--Description of What Data Can Be Viewed-->
+            <div class="text-desc">
+                <h3>View Your Data</h3>
+                <p>Once you have tracked your blinks for at least one session, you can check out your data for that session.
+                </p>
+                <p>At the link below, for each session, you'll find your average blinks per minute and a graph of how your blinks varied over time.
+                </p>
+
+                <!--Link to Page for Viewing Data-->
+                <div class="btn"><a href="statistics.html">See My Data</a></div>
+            </div>
+        </section>
+    
+        <!--Footer-->
+        <footer>
+            <p>Spencer Lyudovyk, Andrew Wang, Andrew Li, Ben FitzGerald</p>
+        </footer>
+    </main>
+
+    <!--Javascript Links-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="/js/mainScripts.js"></script>
+</body>
+</html>
