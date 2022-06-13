@@ -60,10 +60,10 @@ $(document).ready(function () {
     function showGen(element, element2, arrow) {
         $(element).hover(() => {
             $(element2).show();  //Primary dropdown is displayed
-            $(arrow).html("&#11165;");  //Arrow in primary dropdown title is pointed up
+            $(arrow).html("&#9206;");  //Arrow in primary dropdown title is pointed up
         }, () => {
             $(element2).hide();  //Primary dropdown is hidden
-            $(arrow).html("&#11167;");  //Arrow in primary dropdown title is pointed down
+            $(arrow).html("&#9207;");  //Arrow in primary dropdown title is pointed down
         });
     }
 
