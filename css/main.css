@@ -153,7 +153,7 @@ nav {
     display: flex;
     align-content: center;
 
-    background-image: url('../img/usflag.jpg');
+    background-image: url('img/usflag.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
