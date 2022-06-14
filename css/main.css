@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+
 /*Resetting Styles, Setting Font Family, Declaring Color Variables*/
 * {
     all:revert;
-    font-family: Helvetica, sans-serif;
+    font-family: Catamaran, sans-serif;
     margin:0;
 
     /*Green Color Scheme*/
@@ -697,17 +699,20 @@ footer {
 
 /*Adjusting Styles of Items On Screens Under 1200px Width*/
 @media only screen and (max-width:1200px){
+    /*Images in Info Slides*/
     .slide-img img {
-        min-width: auto;
+        all: revert;
+        height: 100%;
     }
 }
 
 
 /*Adjusting Styles of Items On Screens Under 1000px Width*/
 @media only screen and (max-width:1000px){
-    .slide-with-img {
+    .slide {
         width: 90vw;
     }
+    
 }
 
 /*Adjusting Styles of Items On Screens Under 800px Width*/
@@ -717,25 +722,35 @@ footer {
         width:70%;
     }
 
-    .slide-with-img {
+    .slide {
         width:95vw;
     }
-
-
 }
 
 /*Adjusting Styles of Items On Screens Under 700px Width*/
 @media only screen and (max-width: 700px) {
-    /*Steps and Images Stack in Column Instead of In Row*/
-    .slide-with-img {
-       flex-direction: column;
+    .slide {
+        all:revert;
+        width: 95vw !important;
+        flex-direction: column;
+        margin: 10px 0 20px;
     }
 
-    /*Slides and Images Each Take Up 95% of ViewWidth*/
-    .slides {
-        width:95vw !important;
+    .slide .slide-img {
+        width: 95vw;
+        margin:0;
     }
-    .slide-with-img img {
-        width:95vw !important;
+
+    .slide-img img {
+        width:100%;
+    }
+
+    .text-desc {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 40px;
+
+        background-color: var(--color-medium);
+        color: whitesmoke;
     }
 }
