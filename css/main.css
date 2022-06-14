@@ -240,6 +240,11 @@ nav {
     text-indent: -50px;
 }
 
+.main-article a.inline{
+    text-indent: 0;
+
+}
+
 .main-article a:hover {
     color: var(--color-accent-light)
 }
