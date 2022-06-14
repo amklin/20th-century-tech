@@ -12,7 +12,8 @@
     --color-semi-transparent: rgba(231, 180, 180, 0.4);
     --body-bg-color: rgb(255, 248, 248);
     --color-light-medium: rgb(208, 147, 147);
-    --color-highlight: rgb(24, 42, 75);
+    --color-accent: rgb(24, 42, 75);
+    --color-accent-light: rgb(87, 99, 123);
 }
 
 /*General Styles*/
@@ -234,7 +235,13 @@ nav {
 
 .main-article a {
     font-size: 16px;
-    color: var(--color-highlight);
+    color: var(--color-accent);
+    display: inline-block;
+    text-indent: -50px;
+}
+
+.main-article a:hover {
+    color: var(--color-accent-light)
 }
 
 .img-section {
@@ -380,7 +387,7 @@ hr {
     width: 100%;
     padding: 40px;
 
-    background-color: var(--color-highlight);
+    background-color: var(--color-accent);
     /*background-color:var(--color-medium);*/
     color: whitesmoke;
 }
