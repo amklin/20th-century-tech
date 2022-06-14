@@ -23,7 +23,8 @@ $(document).ready(function () {
     /*Nav Bar Buttons*/
     
     /*All nav bar buttons/elements change styles on hover*/
-    buttons = ['sign-in', 'sign-up', 'view-stats', 'your-acc', 'return', 'change-pass', 'your-prof', 'sign-out', 'how-to-use', 'home']  //Array of button classes
+    buttons = ['sign-in', 'sign-up', 'view-stats', 'your-acc', 'return', 'change-pass', 'your-prof', 'sign-out', 'how-to-use', 'home', 'trinity', 'thor',
+                'credit', 'explorer', 'birthcontrol', 'napalm', 'xerox', 'clipper', 'sources']  //Array of button classes
     for(let i = 0; i < buttons.length; i++){  // Iterates through array
         changeButtonOnHover('.' + buttons[i]);
     }

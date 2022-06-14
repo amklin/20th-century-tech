@@ -134,7 +134,8 @@ nav {
 }
 
 /*Links in Dropdowns Take Up Dropdown's Full Width*/
-.home, .view-stats {
+.trinity, .thor, .credit, .explorer, .birthcontrol,
+.napalm, .xerox, .clipper, .sources {
     width: 100%;
     padding: 5px 8px;
 }
@@ -240,13 +241,21 @@ nav {
     display: flex;
 }
 
-.img-section img {
-    margin-top: 20px;
-    width: 40%;
+.img-section figure {
+    margin: 20px 0 0 0;
+}
+
+figure img {
+    width:100%;
+}
+
+figcaption {
+    color:grey;
 }
 
 .text-w-img {
     margin-left: 20px;
+    max-width: 500px;
 }
 
 
@@ -265,6 +274,46 @@ hr {
     background-color:black;
     border:none;
 }
+
+
+.buttons {
+    position:absolute;
+    z-index: 10;
+    margin-top:40px;
+    width:92vw;
+    display:flex;
+    justify-content: space-between;
+}
+
+.button {
+    border: 3px solid var(--color-main-dark);
+    background: var(--color-medium);
+    padding: 20px 5px;
+    display:flex;
+    justify-content: center;
+}
+
+.button:hover {
+    border: 3px solid var(--color-light-medium);
+    background: var(--color-main-light);
+    color:var(--color-main-dark);
+}
+
+.btn-w-label {
+    display:flex;
+    flex-direction: column;
+    width: 8vw;
+    padding:0;
+}
+
+.btn-w-label p {
+    padding-top: 15px;
+    color:grey;
+    font-size: 15px;
+    text-align:center;
+}
+
+
 
 /*Info Slides (About, How to Use, View Data)*/
 .slide {
