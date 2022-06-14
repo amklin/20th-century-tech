@@ -12,6 +12,7 @@
     --color-semi-transparent: rgba(231, 180, 180, 0.4);
     --body-bg-color: rgb(255, 248, 248);
     --color-light-medium: rgb(208, 147, 147);
+    --color-highlight: rgb(24, 42, 75);
 }
 
 /*General Styles*/
@@ -230,6 +231,11 @@ nav {
     font-size: 16px;
 }
 
+.main-article a {
+    font-size: 16px;
+    color: var(--color-highlight);
+}
+
 .img-section {
     display: flex;
 }
@@ -325,7 +331,7 @@ hr {
     width: 100%;
     padding: 40px;
 
-    background-color: #182a4b;
+    background-color: var(--color-highlight);
     /*background-color:var(--color-medium);*/
     color: whitesmoke;
 }
